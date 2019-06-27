@@ -41,8 +41,8 @@
 * Registry - A place either local or on hub.docker.com that stores images
  
 ## Getting Inside a Container
-* ```docker container run -it <containername> <command>``` -- start a new container interactively
-* ```docker container exec -it <containername> <command>``` -- run an addtional command inside an existing container
+* `docker container run -it <containername> <command>` -- start a new container interactively
+* `docker container exec -it <containername> <command>` -- run an addtional command inside an existing container
 
 ## Docker Networks
 * Show networks : `docker network ls`
