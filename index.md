@@ -1,26 +1,24 @@
 # My Notes
 
 ## Programming
-[[Python]] -- Python Notes
-[[Java]] -- Java Notes
-[[C#]] -- c# Notes
-[[git]] -- Git
 
+[Python](./Python.md) -- Python Notes
+[Java](./Java.md) -- Java Notes
+[C#](./C#.md) -- c# Notes
+[git](./git.md) -- Git
 
-== Container Tech ==
-[[Docker]] -- Docker Notes
-[[Kubernetes]] -- Kubernetes Notes
+## Container Tech
+[Docker](./Docker.md) -- Docker Notes
+[Kubernetes](./Kubernetes.md) -- Kubernetes Notes
 
-== Web Developement ==
-[[HTML]] -- HTML Notes
-[[CSS]] -- CSS Notes
-[[Javascript]] -- Javascript Notes
-[[Flask]] -- Flask Notes
-[[Django]] -- Django Notes
-[[React]] -- React Notes
-[[Angular]] -- Angular Notes
-[[Vue]] -- Vue Notes
-[[nginx]] -- nginx Notes
-[[Apache]] -- Apache Notes
-
-
+## Web Developement
+[HTML](./HTML.md) -- HTML Notes
+[CSS](./CSS.md) -- CSS Notes
+[Javascript](./Javascript.md) -- Javascript Notes
+[Flask](./Flask.md) -- Flask Notes
+[Django](./Django.md) -- Django Notes
+[React](./React.md) -- React Notes
+[Angular](./Angular.md) -- Angular Notes
+[Vue](./Vue.md) -- Vue Notes
+[nginx](./nginx.md) -- nginx Notes
+[Apache](./apache.md) -- Apache Notes
