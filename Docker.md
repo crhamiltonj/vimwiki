@@ -159,8 +159,26 @@ Used for local development and testing
 * `docker-compose up` -- sets up volumes and networks and starts all containers
 * `docker-compose down` -- stops all containers and removes containers/volumes and networks
 
+## Docker Swarm
 
+Swarm brings different hosts or nodes into a single operating unit. You can now orchestrate how the nodes interoperate. 
 
+There are two types of nodes:
+* managers -- contains all the information needed to be an authority in a swarm 
+* workers -- Can respond to requests from manager nodes
 
+Control Plane -- How orders are sent around the swarm between managers and workers
 
-* 
+### Standard commands
+* `docker swarm` -- Initializes swarm and sets the host it is run on as manager or allows another host to join an existing swarm. 
+* `docker node` -- Used for bringing servers in and out of the swarm and promoting and demoting managers and workers
+* `docker service` -- Replaces the docker run command for swarms/cluster. starts containers in a swarm.
+* `docker stack`
+* `docker secret`
+
+### Overlay Multi-Host Networking
+* Just choose `--driver overlay` when creating the network
+* Only for container-to-container traffic
+* Optional IPSec encryption
+* Each service can be connected to multiple networks
+
