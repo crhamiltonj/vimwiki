@@ -22,3 +22,4 @@
 [Vue](./Vue.md) -- Vue Notes
 [nginx](./nginx.md) -- nginx Notes
 [Apache](./apache.md) -- Apache Notes
+[Self Signed Certificates](./self_signed_cert.md) -- Creating a self signed cert for development
