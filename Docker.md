@@ -161,6 +161,7 @@ Used for local development and testing
 
 ## Docker Swarm
 
+<<<<<<< Updated upstream
 Swarm brings different hosts or nodes into a single operating unit. You can now orchestrate how the nodes interoperate. 
 
 There are two types of nodes:
@@ -182,3 +183,5 @@ Control Plane -- How orders are sent around the swarm between managers and worke
 * Optional IPSec encryption
 * Each service can be connected to multiple networks
 
+=======
+>>>>>>> Stashed changes
