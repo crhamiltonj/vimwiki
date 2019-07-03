@@ -44,6 +44,16 @@ def init_db_command():
     init_db()
     click.echo('Initialized the database.')
 
+@click.command('init-db')
+@with_appcontext
+def init_db_command():
+    """Clear the existing data and create new tables"""
+    init_db()
+    click.echo('Initialized the database.')
+
+def init_app(app):
+    app.teardown_appcontext(close_db)
+    app.cli.add_comment(init_db_command)
 ```
 
 * `get_db()` checks the global context and creates a database connection if it doesn't already exist.
@@ -55,4 +65,7 @@ def init_db_command():
 * `init_db` gets a handle to a database connection using `get_db()` and executes a SQL query that initializes the database.
   * `open_resource()` opens a file relative to the application's package
   * `click.command()` defines a command called init-db that calls the init_db function and show a success message to the user.
+* `init_app()` is a callback function that initializes the database and set up a further callback to close the connection when the request completes
+  * `app.teardown_appcontext` registers the `close_db` function for cleanup
+  * `app.cli.add_command` adds a new command that can be called with the flask command
   

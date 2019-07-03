@@ -28,12 +28,18 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    from . import db
+    db.init_app(app)
+
+    from . import auth
+    app.register_blueprint(auth.bp)
+
+    return app
+
     # a simple page that says hello
     @app.route('/hello')
     def hello():
         return 'Hello World!'
-
-    return app
 ```
 
 * `create_app` does the following:
@@ -47,6 +53,8 @@ def create_app(test_config=None):
       * `test_config` can be passed to the factory instead of the default configuration so test can be configured independantly of any developement values.
   4. `os.makedirs()` ensures the `app.instance_path` exists.
   5. `@app.route()` creates a simple route to see the application working
+  6. `db.init_app()` registers the database with the app returned from the app factory
+  7. `app.register_blueprint(auth.bp)` registers the blueprint `bp` in the auth module to the app returned by `create_app`.
 
 ## To Run
 
@@ -57,4 +65,3 @@ export FLASK_APP=flaskr # the module where the __init__.py is stored
 export FLASK_ENV=development # turn on debug mode and restart
 flask run # flask run will import the module thereby executing the code in create_app
 ```
-
