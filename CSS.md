@@ -2,6 +2,7 @@
 
 ## CSS Selector Format
 
+
 ```css
  a {
   background-color: yellow;
@@ -17,6 +18,7 @@
 3. External CSS -- A seperate file that can be included into multiple documents to give a common style to all documents `<link rel="stylesheet" href="css/style.css">`
 
 ## Selectors
+
 * tag -- the html tag that you want to target. Applies to all tags of that type in the document unless overridden by a class, id or cascading. Target by using the tag without the <>.
 * id -- An attribute that can be added to a tag.  There can multiple ids in a document, but only one tag with that specific name. Use the '#' to target
 * class -- An attribute that can be added to one or more tags. The same class can apply to different types of tags and it will modify the same properties for each tag. Use the '.' to target.

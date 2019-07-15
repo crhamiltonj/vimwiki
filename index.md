@@ -2,13 +2,14 @@
 
 ## Programming
 
-[Python](./Python.md) -- Python Notes
-[Java](./Java.md) -- Java Notes
-[C#](./C#.md) -- c# Notes
-[git](./git.md) -- Git
+* [Python](./Python.md) -- Python Notes
+* [Java](./Java.md) -- Java Notes
+* [C#](./C#.md) -- c# Notes
+* [git](./git.md) -- Git
 
 ## Container Tech
 
+<<<<<<< Updated upstream
 [Docker](./Docker.md) -- Docker Notes
 [Kubernetes](./Kubernetes.md) -- Kubernetes Notes
 
