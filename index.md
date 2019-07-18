@@ -1,5 +1,4 @@
-My Notes
-========
+# My Notes
 
 ## Programming
 
@@ -10,14 +9,8 @@ My Notes
 
 ## Container Tech
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-[Docker](./Docker.md) -- Docker Notes
-[Kubernetes](./Kubernetes.md) -- Kubernetes Notes
-=======
 * [Docker](./Docker.md) -- Docker Notes
 * [Kubernetes](./Kubernetes.md) -- Kubernetes Notes
->>>>>>> Stashed changes
 
 ## Web Developement
 
