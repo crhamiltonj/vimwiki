@@ -9,26 +9,37 @@
 
 ## Container Tech
 
-<<<<<<< Updated upstream
-[Docker](./Docker.md) -- Docker Notes
-[Kubernetes](./Kubernetes.md) -- Kubernetes Notes
+* [Docker](./Docker.md) -- Docker Notes
+* [Kubernetes](./Kubernetes.md) -- Kubernetes Notes
 
 ## Web Developement
 
-[HTML](./HTML.md) -- HTML Notes
-[CSS](./CSS.md) -- CSS Notes
-[Javascript](./Javascript.md) -- Javascript Notes
+* [HTML](./HTML.md) -- HTML Notes
+* [CSS](./CSS.md) -- CSS Notes
+* [Javascript](./Javascript.md) -- Javascript Notes
 
 ## Web Frameworks
 
-[Flask](./Flask.md) -- Flask Notes
-[Django](./Django.md) -- Django Notes
-[React](./React.md) -- React Notes
-[Angular](./Angular.md) -- Angular Notes
-[Vue](./Vue.md) -- Vue Notes
+* [Flask](./Flask.md) -- Flask Notes
+* [Django](./Django.md) -- Django Notes
+* [React](./React.md) -- React Notes
+* [Angular](./Angular.md) -- Angular Notes
+* [Vue](./Vue.md) -- Vue Notes
 
-## Web Technologies
+## Web Technologies and Tools
 
-[nginx](./nginx.md) -- nginx Notes
-[Apache](./apache.md) -- Apache Notes
-[Self Signed Certificates](./self_signed_cert.md) -- Creating a self signed cert for development
+* [nginx](./nginx.md) -- nginx Notes
+* [Apache](./apache.md) -- Apache Notes
+* [WordPress](./wordpress.md) -- CMS Engine
+* [devilbox](./devilbox) -- Dockerized LAMP and MEAN stack for local dev
+* [Self Signed Certificates](./self_signed_cert.md) -- Creating a self signed cert for development
+
+## Tools and Other Software
+
+* [Domain Hosting](./domains.md)
+* [FTP Clients](./ftp.md)
+* [Image Editing](./image_editing.md)
+* [Invoices](./invoices.md)
+* [Payment Processing](./payments.md)
+
+
