@@ -55,8 +55,6 @@ def index(request):
 
 ### Base Layouts
 
-1. Create a base layout html file in the root of the templates folder and code/style accordingly. It should have a block to embed content `{% block content%} {% endblock %}`
-2. To add to an existing template add `{% extends 'base_template_name.html' %}` and wrap content to be displayed in the block endblock structure.
 
 ## Static Files and Paths
 
