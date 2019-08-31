@@ -25,7 +25,6 @@
 * [React](./React.md) -- React Notes
 * [Angular](./Angular.md) -- Angular Notes
 * [Vue](./Vue.md) -- Vue Notes
-<<<<<<< HEAD
 
 ## Web Technologies and Tools
 
