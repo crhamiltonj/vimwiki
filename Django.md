@@ -167,7 +167,7 @@ To add to the database, do then following:
 
 #### Admin Customization
 * Modify the admin template -- Create `templates/admin/base_site.html` with the following code as a guide.
-```jinja2
+```jinja
 {% extends 'admin/base.html' %}
 
 {% load static %}
