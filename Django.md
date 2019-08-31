@@ -91,7 +91,6 @@ MEDIA_URL='/media/'
 
 ## Linking
 
-1. For internal links in a template use `{% url '<template_name>.html' %}`
 
 ## Models
 
