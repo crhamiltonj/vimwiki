@@ -83,8 +83,6 @@ MEDIA_URL='/media/'
 
 ### Adjusting templates
 
-1. Add `{% load static %}` to the top of the template
-2. Adjust the URIs so they look like `{% static 'path/resource' %}
 
 ### Partials
 1. Create a folder under templates called partials
