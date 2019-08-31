@@ -1,5 +1,7 @@
 # Devilbox
 
+<img src="https://raw.githubusercontent.com/devilbox/artwork/master/submissions_logo/cytopia/01/png/logo_128_trans.png" width="128px">
+
 Allows you to have an unlimited about of projects ready without having to configure any virtualhosts
 
 ## Prerequisites
@@ -9,26 +11,26 @@ The only prerequisites needed is a valid docker install and docker-compose
 ## Installation
 
 1. Download devilbox
-    `git clone https://github.com/cytopia/devilbox`
+   `git clone https://github.com/cytopia/devilbox`
 2. Create a .env file
-  Copy the example env file to .env
-    `cp env-example .env`
+   Copy the example env file to .env
+   `cp env-example .env`
 3. Set the UID and GID to your current user's UID and GID
 
 ## Start the Devilbox
 
-* To start all containers -- `docker-compose up`
-* To start all containers in the background -- `docker-compose up -d`
-* To start some containers -- `docker-compose up -d httpd php mysql`
+- To start all containers -- `docker-compose up`
+- To start all containers in the background -- `docker-compose up -d`
+- To start some containers -- `docker-compose up -d httpd php mysql`
 
 ## Stop the Devilbox
 
-* Stop all containers -- `docker-compose stop`
-* Remove stopped containers -- `docker-compose rm -f`
+- Stop all containers -- `docker-compose stop`
+- Remove stopped containers -- `docker-compose rm -f`
 
 ## Open the intranet
 
-* In a browser, go to http://127.0.0.1 (or http://localhost) -- this will show all running and stopped containers
+- In a browser, go to http://127.0.0.1 (or http://localhost) -- this will show all running and stopped containers
 
 ## WordPress Install
 
