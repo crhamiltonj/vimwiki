@@ -41,7 +41,6 @@ CSS Units
 - rem: 1rem is the font size of the root element; The number is a multiplier of that value
 - vw: 1% of the viewport width
 - vh: 1% of the viewport height
--
 
 ## Color Types
 
@@ -55,16 +54,16 @@ CSS Units
 1. background-color: changes the background color of an element
 2. border: changes the style of the border. can be specified seperately or on one line
 
-```css
-box {
-  border: 3px red solid;
+   ```css
+   box {
+     border: 3px red solid;
 
-  /* is the same as */
-  border-width: 3px;
-  border-color: red;
-  border-style: solid;
-}
-```
+     /* is the same as */
+     border-width: 3px;
+     border-color: red;
+     border-style: solid;
+   }
+   ```
 
 3. color: whanges the color of the font
 4. border-radius: rounds the corners of a border

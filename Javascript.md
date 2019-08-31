@@ -53,12 +53,11 @@ Javascript has dynamic typing: data types are automatically assigned to variable
 
 ### Rules
 
-- Variables cannot start or contain characters with numbers or symbols that are not \\\_ or \$
+- Variables cannot start or contain characters with numbers or symbols that are not \\\\_ or \$
 - Reserved JavaScript keywords cannot be used as variable names
 
 ## Variable Mutation and Type Coercion
 
 - Type Coercion -- JavaScript automatically converts certain variables so that the can be combined with other variables of another type.
--
 
 [Back to Index](index.md)

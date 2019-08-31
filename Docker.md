@@ -131,12 +131,10 @@ Maps a host file directory to a container file or directory. It cannot be specif
 
 Docker compose is created from two parts
 
-1. YAML file that describes:
-
-- containers
-- networks
-- volumes
-
+1. YAML file that describes
+   - containers
+   - networks
+   - volumes
 2. docker-compose used for local dev and test automation
 
 #### Sample docker-compose.yml

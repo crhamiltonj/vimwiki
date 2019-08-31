@@ -30,7 +30,7 @@ The only prerequisites needed is a valid docker install and docker-compose
 
 ## Open the intranet
 
-- In a browser, go to http://127.0.0.1 (or http://localhost) -- this will show all running and stopped containers
+- In a browser, go to `http://127.0.0.1` (or `http://localhost`) -- this will show all running and stopped containers
 
 ## WordPress Install
 

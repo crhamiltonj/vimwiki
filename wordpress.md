@@ -21,4 +21,3 @@ Themes change the look and feel of a wordpress site. Plugins change the function
 ## Plugins
 
 - Classic Editor
--
