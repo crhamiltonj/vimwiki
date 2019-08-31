@@ -1,6 +1,7 @@
 # Blueprints and Views
 
 auth.py
+
 ```python
 import functools
 from flask import (
@@ -26,7 +27,7 @@ def register():
       error = 'Password is required'
     elif db.execute ('SELECT id FROM user where USERNAME = ?', (username,)).fetchone() is not None:
       error = 'User {} is already registered.'.format(username)
-    
+
     if error is None:
       db.execute(
         'INSERT INTO user (username, password) VALUES (?, ?)',
@@ -39,8 +40,10 @@ def register():
   return render_template('auth/register.html')
 ```
 
-Creates a blueprint named `auth`. 
-* `__name__` is passed in a an argument so other parts of the blueprint can know where it is defined.
-* `url_prefix` is prepended to all URL associated with the blueprint.
+Creates a blueprint named `auth`.
 
+- `__name__` is passed in a an argument so other parts of the blueprint can know where it is defined.
+- `url_prefix` is prepended to all URL associated with the blueprint.
 
+[Back to Flask](flask.md)
+[Back to Index](index.md)

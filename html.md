@@ -109,3 +109,5 @@
 - article -- any type of repeatable content
 - aside -- content not directly related to the main section
 - footer -- Content such as copyright, ptivacy and TOS, contact info etc.
+
+[Back to Index](index.md)

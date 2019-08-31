@@ -66,3 +66,6 @@ class SomeClass(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
 ```
+
+[Back to Python](python.md)
+[Back to Index](index.md)

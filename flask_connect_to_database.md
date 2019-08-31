@@ -56,16 +56,19 @@ def init_app(app):
     app.cli.add_comment(init_db_command)
 ```
 
-* `get_db()` checks the global context and creates a database connection if it doesn't already exist.
-  * `g` is a special object that is unique to each request. It is used to store data that might be accessed by multiple functions during a request. The connection is stored and reused instead of creating a new connection if get_db is called a second time in the same request.
-  * `current_app` is another special object that points to the Flask application handling the request. WHen using the application factory pattern, there is no application object when writinf the rest of the code. `get_db` will be called when the application has been created nad is handling a request, so `current_app` should be used
-  * `sqlite3.connect()` establishes a coneection to the file pointed at by the `DATABASE configuration key.
-  * `sqlite3.Row` telles the connection to return rows that behave like dicts.  This allows accessing the columns by name.
-* `close_db()` check  if a connection was created by checking if `g.db` was set. If the connection exists it is closed.
-* `init_db` gets a handle to a database connection using `get_db()` and executes a SQL query that initializes the database.
-  * `open_resource()` opens a file relative to the application's package
-  * `click.command()` defines a command called init-db that calls the init_db function and show a success message to the user.
-* `init_app()` is a callback function that initializes the database and set up a further callback to close the connection when the request completes
-  * `app.teardown_appcontext` registers the `close_db` function for cleanup
-  * `app.cli.add_command` adds a new command that can be called with the flask command
-  
+- `get_db()` checks the global context and creates a database connection if it doesn't already exist.
+  - `g` is a special object that is unique to each request. It is used to store data that might be accessed by multiple functions during a request. The connection is stored and reused instead of creating a new connection if get_db is called a second time in the same request.
+  - `current_app` is another special object that points to the Flask application handling the request. WHen using the application factory pattern, there is no application object when writinf the rest of the code. `get_db` will be called when the application has been created nad is handling a request, so `current_app` should be used
+  - `sqlite3.connect()` establishes a coneection to the file pointed at by the `DATABASE configuration key.
+  - `sqlite3.Row` telles the connection to return rows that behave like dicts. This allows accessing the columns by name.
+- `close_db()` check if a connection was created by checking if `g.db` was set. If the connection exists it is closed.
+- `init_db` gets a handle to a database connection using `get_db()` and executes a SQL query that initializes the database.
+  - `open_resource()` opens a file relative to the application's package
+  - `click.command()` defines a command called init-db that calls the init_db function and show a success message to the user.
+- `init_app()` is a callback function that initializes the database and set up a further callback to close the connection when the request completes
+
+  - `app.teardown_appcontext` registers the `close_db` function for cleanup
+  - `app.cli.add_command` adds a new command that can be called with the flask command
+
+[Back to Flask](flask.md)
+[Back to Index](index.md)

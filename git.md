@@ -34,3 +34,5 @@
     `git pull`
   - fetch and merge: downloads changes from remotes but does not apply them. You must do a manual merge
     `git fetch`
+
+[Back to Index](index.md)

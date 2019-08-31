@@ -2,10 +2,14 @@
 
 ## Programming
 
-- [Python](Python.md) -- Python Notes
+- [Python](python.md) -- Python Notes
 - [Java](Java.md) -- Java Notes
-- [C#](C#.md) -- c# Notes
+- [C](c.md) -- C Notes
+- [C++](cpp.md) -- C++ Notes
+- [C#](c_sharp.md) -- C# Notes
 - [git](git.md) -- Git
+- [Rust](rust.md) -- Rust Notes
+- [Go](go.md) -- Go Notes
 
 ## Container Tech
 
@@ -36,8 +40,8 @@
 
 ## Tools and Other Software
 
-- [Domain Hosting](domains.md)
-- [FTP Clients](ftp.md)
-- [Image Editing](image_editing.md)
-- [Invoices](invoices.md)
-- [Payment Processing](payments.md)
+- [Domain Hosting](domains.md) -- Domain Hosting Services
+- [FTP Clients](ftp.md) -- File Transfer Clients
+- [Image Editing](image_editing.md) -- Image Editing Software
+- [Invoices](invoices.md) -- Invoicing and Billing
+- [Payment Processing](payments.md) -- Payment Processing

@@ -151,3 +151,5 @@ Links and buttons can be styled identically and made to look identical. You may 
 - absolute -- positioned releative to its parent element that is positioned relative
 - fixed -- positioned relative to the viewport
 - sticky -- positioned based on scroll position
+
+[Back to Index](index.md)

@@ -42,3 +42,5 @@ The only prerequisites needed is a valid docker install and docker-compose
 6. Add MySQL Database -- `mysql -u root -h 127.0.0.1 -p -e 'CREATE DATABASE <vhost_name>'`
 7. Add vhost name to /etc/hosts -- `127.0.0.1 <vhost_name>.loc`
 8. Open vhost in browser and complete install steps
+
+[Back to Index](index.md)
