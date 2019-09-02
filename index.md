@@ -13,8 +13,8 @@
 
 ## Container Tech
 
-- [Docker](Docker.md) -- Docker Notes
-- [Kubernetes](Kubernetes.md) -- Kubernetes Notes
+- [Docker](docker.md) -- Docker Notes
+- [Kubernetes](kubernetes.md) -- Kubernetes Notes
 
 ## Web Developement
 
@@ -24,11 +24,11 @@
 
 ## Web Frameworks
 
-- [Flask](Flask.md) -- Flask Notes
-- [Django](Django.md) -- Django Notes
-- [React](React.md) -- React Notes
-- [Angular](Angular.md) -- Angular Notes
-- [Vue](Vue.md) -- Vue Notes
+- [Flask](flask.md) -- Flask Notes
+- [Django](django.md) -- Django Notes
+- [React](react.md) -- React Notes
+- [Angular](angular.md) -- Angular Notes
+- [Vue](vue.md) -- Vue Notes
 
 ## Web Technologies and Tools
 
