@@ -14,6 +14,8 @@
   - Modern web applications thatn we can interact with
 - Frameworks like React and Angular are 100% based on JavaScript: you need to master JavaScript in order to use them!
 
+---
+
 ## Comments
 
 ### Single Line and Multiline
@@ -21,6 +23,8 @@
 - JavaScript comments
   - Single line comments are `//`
   - Multiline comments are `/* */`
+
+---
 
 ## Variables
 
@@ -55,13 +59,15 @@ Javascript has dynamic typing: data types are automatically assigned to variable
 
 #### Rules
 
-- Variables cannot start or contain characters with numbers or symbols that are not \\\\\\\\\_ or \$
+- Variables cannot start or contain characters with numbers or symbols that are not \\\\\\\\\\_ or \$
 - Reserved JavaScript keywords cannot be used as variable names
 
 ### Variable Mutation and Type Coercion
 
 - Type Coercion -- JavaScript automatically converts certain variables so that the can be combined with other variables of another type.
 - Variable Mutation -- JavaScript will also convert the type of a variable upon reassignment with a different type.
+
+---
 
 ## Operators
 
@@ -102,6 +108,8 @@ Javascript has dynamic typing: data types are automatically assigned to variable
 
 If values don't appear to be calculating correcttly check the operator precedence table for precendence and associativity
 [MDN Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table)
+
+---
 
 ## Conditionals and Flow Control
 
@@ -198,6 +206,8 @@ var ageJohn = calculateAge(1990);
 console.log(ageJohn);
 ```
 
+---
+
 ## Function Expressions
 
 ### Defining
@@ -218,6 +228,8 @@ var whatDoYouDo = function(job, firstName) {
 
 console.log(whatDoYouDo("teacher", "John"));
 ```
+
+---
 
 ## Arrays
 
@@ -252,6 +264,8 @@ names.shift();
 // if indexOf returns -1 the item is not in the array
 names.indexOf("Mark");
 ```
+
+---
 
 ## Objects and Methods
 
@@ -321,6 +335,8 @@ var john = {
 john.calcAge();
 console.log(john);
 ```
+
+---
 
 ## Loops and Iteration
 
