@@ -20,7 +20,7 @@
 
 - [HTML](HTML.md) -- HTML Notes
 - [CSS](CSS.md) -- CSS Notes
-- [Javascript](Javascript.md) -- Javascript Notes
+- [Javascript](javascript.md) -- Javascript Notes
 
 ## Web Frameworks
 
