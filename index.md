@@ -11,7 +11,7 @@
 - [Rust](rust.md) -- Rust Notes
 - [Go](go.md) -- Go Notes
 - [Bash](bash.md) -- Bash Scripting
-- [Zsh](zsh.m d) -- Zsh Scripting
+- [Zsh](zsh.md) -- Zsh Scripting
 
 ## Container Tech
 
