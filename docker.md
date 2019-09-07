@@ -1,6 +1,5 @@
 # Docker
 
-<img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/vertical-logo-monochromatic.png?itok=erja9lKc" width="128px">
 ## Installation
 
 - Direct - For linux, windows server 2016

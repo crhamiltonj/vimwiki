@@ -1,49 +1,51 @@
 # My Notes
 
-## Programming
+[Programming]()
 
-- [Python](python.md) -- Python Notes
-- [Java](java.md) -- Java Notes
-- [C](c.md) -- C Notes
-- [C++](cpp.md) -- C++ Notes
-- [C#](c_sharp.md) -- C# Notes
-- [git](git.md) -- Git
-- [Rust](rust.md) -- Rust Notes
-- [Go](go.md) -- Go Notes
-- [Bash](bash.md) -- Bash Scripting
-- [Zsh](zsh.md) -- Zsh Scripting
+- [Python](python.md)
+- [Java](java.md)
+- [C](c.md)
+- [C++](cpp.md)
+- [C#](c_sharp.md)
+- [git](git.md)
+- [Rust](rust.md)
+- [Go](go.md)
+- [Bash](bash.md)
+- [Zsh](zsh.md)
 
-## Container Tech
+[Container Tech]()
 
-- [Docker](docker.md) -- Docker Notes
-- [Kubernetes](kubernetes.md) -- Kubernetes Notes
+- [Docker](docker.md)
+- [Kubernetes](kubernetes.md)
 
-## Web Developement
+[Web Development]()
 
-- [HTML](html.md) -- HTML Notes
-- [CSS](css.md) -- CSS Notes
-- [Javascript](javascript.md) -- Javascript Notes
+- [HTML](html.md)
+- [CSS](css.md)
+- [Javascript](javascript.md)
 
-## Web Frameworks
+[Web Frameworks]()
 
-- [Flask](flask.md) -- Flask Notes
-- [Django](django.md) -- Django Notes
-- [React](react.md) -- React Notes
-- [Angular](angular.md) -- Angular Notes
-- [Vue](vue.md) -- Vue Notes
+- [Flask](flask.md)
+- [Django](django.md)
+- [React](react.md)
+- [Angular](angular.md)
+- [Vue](vue.md)
 
-## Web Technologies and Tools
+[Web Technologies and Tools]()
 
-- [nginx](nginx.md) -- nginx Notes
-- [Apache](apache.md) -- Apache Notes
-- [WordPress](wordpress.md) -- CMS Engine
-- [devilbox](devilbox.md) -- Dockerized LAMP and MEAN stack for local dev
-- [Self Signed Certificates](self_signed_cert.md) -- Creating a self signed cert for development
+- [nginx](nginx.md)
+- [Apache](apache.md)
+- [WordPress](wordpress.md)
+- [devilbox](devilbox.md)
+- [Self Signed Certificates](self_signed_cert.md)for development
 
-## Tools and Other Software
+[Tools and Other Software]()
 
-- [Domain Hosting](domains.md) -- Domain Hosting Services
-- [FTP Clients](ftp.md) -- File Transfer Clients
-- [Image Editing](image_editing.md) -- Image Editing Software
-- [Invoices](invoices.md) -- Invoicing and Billing
-- [Payment Processing](payments.md) -- Payment Processing
+- [Domain Hosting](domains.md)
+- [FTP Clients](ftp.md)
+- [Image Editing](image_editing.md)
+- [Invoices](invoices.md)
+- [Payment Processing](payments.md)
+
+[gimmick:themechooser](Choose theme)
