@@ -83,7 +83,7 @@ The Dockerfile is a recipe for creating an image.
 - CMD -- The command that is run when the container is launched
 - WORKDIR - set the current folder inside the container
 - COPY -- copies the file from the host to the container
-  Format: COPY <HOST_FILE> <CONTAINER_FILE>
+  Format: `COPY <HOST_FILE> <CONTAINER_FILE>`
 
 ### Docker Build
 
