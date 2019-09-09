@@ -1,6 +1,6 @@
 # My Notes
 
-## Programming
+[Programming]()
 
 - [Python](python.md)
 - [Java](java.md)
@@ -13,18 +13,18 @@
 - [Bash](bash.md)
 - [Zsh](zsh.md)
 
-## Container Tech
+[Container Tech]()
 
 - [Docker](docker.md)
 - [Kubernetes](kubernetes.md)
 
-## Web Development
+[Web Development]()
 
 - [HTML](html.md)
 - [CSS](css.md)
 - [Javascript](javascript.md)
 
-## Web Frameworks
+[Web Frameworks]()
 
 - [Flask](flask.md)
 - [Django](django.md)
@@ -32,7 +32,7 @@
 - [Angular](angular.md)
 - [Vue](vue.md)
 
-## Web Technologies and Tools
+[Web Technologies and Tools]()
 
 - [nginx](nginx.md)
 - [Apache](apache.md)
@@ -40,10 +40,12 @@
 - [devilbox](devilbox.md)
 - [Self Signed Certificates](self_signed_cert.md)for development
 
-## Tools and Other Software
+[Tools and Other Software]()
 
 - [Domain Hosting](domains.md)
 - [FTP Clients](ftp.md)
 - [Image Editing](image_editing.md)
 - [Invoices](invoices.md)
 - [Payment Processing](payments.md)
+
+[gimmick:themechooser](Choose theme)

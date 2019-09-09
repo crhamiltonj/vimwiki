@@ -1,8 +1,10 @@
 # SQLAlchemy
 
+<img src="https://www.sqlalchemy.org/img/sqla_logo.png" width=128px>
 ## Creating an engine
 
 Creates an object that to represent the database we are trying to connect to.
+
 ```python
 from sqlalchemy import create_engine
 
@@ -51,7 +53,7 @@ session = Session()
 
 ## Creating Models
 
-Models are python classes that represent records in the database.  To create a database extend the declaritive_base object from sqlalchemy.ext.declaritive.
+Models are python classes that represent records in the database. To create a database extend the declaritive_base object from sqlalchemy.ext.declaritive.
 
 ```python
 from sqlalchemy import Column, Integer, String
@@ -64,3 +66,6 @@ class SomeClass(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
 ```
+
+[Back to Python](python.md)
+[Back to Index](index.md)

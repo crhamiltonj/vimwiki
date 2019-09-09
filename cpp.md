@@ -1,2 +1,3 @@
-[Back to Flask](flask.md)
+# C++ Notes
+
 [Back to Index](index.md)
