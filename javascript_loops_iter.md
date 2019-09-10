@@ -39,6 +39,8 @@ while (i < john.length) {
 
 ### continue
 
+Stops processing this iteration of the loop and starts again at the next iteration.
+
 ```javascript
 var john = ["John", "Smith", 1990, "designer", false];
 
@@ -49,6 +51,8 @@ for (i = 0; i < john.length; i++) {
 ```
 
 ### break
+
+Stops processing the loops and end further iterations.
 
 ```javascript
 var john = ["John", "Smith", 1990, "designer", false];

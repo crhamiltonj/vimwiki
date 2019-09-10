@@ -1,6 +1,6 @@
 # Module Pattern
 
-The module pattern allows you to create objects that keeps some data or methods private while allowing other data and methds to be public. It does this using [IIFE](javascript_functions_objects.md#Immediately_Invoked_Function_Expressions) and [closures](javascript_functions_objects.md#Closures).
+The module pattern allows you to create objects that keeps some data or methods private while allowing other data and methods to be public. It does this using [IIFE](javascript_functions_objects.md#Immediately_Invoked_Function_Expressions) and [closures](javascript_functions_objects.md#Closures).
 
 ```javascript
 var budgetController = (function() {

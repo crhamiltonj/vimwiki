@@ -65,6 +65,9 @@ var john = {
 
 john.calcAge();
 console.log(john);
+
+console.log(john['firstName']);
+console.log(john.firstName)
 ```
 
 [Back](javascript.md)
