@@ -13,6 +13,6 @@ ES6/ES2015 and later is well supported in modern browsers but not in older brows
 - [Maps](javascript__next_gen__maps.md)
 - [Classes and SubClasses](javascript__next_gen__classes_subclasses.md)
 - [Promises Async/Await AJAX](javascript__next_gen__promises_async_await_AJAX.md)
-- [Native Modules](javascript__next_gen__modern_javascript.md)
+- [Modern Javascript](javascript__next_gen__modern_javascript.md)
 
 [Back to Javascript](javascript.md)
