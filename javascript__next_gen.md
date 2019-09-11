@@ -12,7 +12,7 @@ ES6/ES2015 and later is well supported in modern browsers but not in older brows
 - [Rest and Default Parameters](javascript__next_gen__rest_and_default.md)
 - [Maps](javascript__next_gen__maps.md)
 - [Classes and SubClasses](javascript__next_gen__classes_subclasses.md)
-- [Promises](javascript__next_gen__promises.md)
-- [Native Modules](javascript__next_gen__native_modules.md)
+- [Promises Async/Await AJAX](javascript__next_gen__promises_async_await_AJAX.md)
+- [Native Modules](javascript__next_gen__modern_javascript.md)
 
 [Back to Javascript](javascript.md)

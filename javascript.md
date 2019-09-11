@@ -20,6 +20,7 @@
 [Objects and Methods](javascript_objects_methods.md)
 [Loops and Iteration](javascript_loops_iter.md)
 [Functions and Objects](javascript_functions_objects.md)
+[DOM Manipulation](javascript__dom_manipulation.md)
 [Module Pattern](javascript_module_pattern.md)
 [Next Generation Javascript ES6 / ES2015](javascript__next_gen.md)
 
