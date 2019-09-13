@@ -14,6 +14,8 @@
   - Modern web applications thatn we can interact with
 - Frameworks like React and Angular are 100% based on JavaScript: you need to master JavaScript in order to use them!
 
+## Language Features
+
 [Basic Language Features](javascript_language.md)
 [Functions](javascript_functions.md)
 [Arrays](javascript_arrays.md)
@@ -23,5 +25,11 @@
 [DOM Manipulation](javascript__dom_manipulation.md)
 [Module Pattern](javascript_module_pattern.md)
 [Next Generation Javascript ES6 / ES2015](javascript__next_gen.md)
+
+## Theory
+
+[Algorithms](javascript__algorithms.md)
+[Data Structures](javascript__data_structures.md)
+[Functional Programming](javascript__functional_programming.md)
 
 [Back to Index](index.md)
