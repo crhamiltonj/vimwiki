@@ -39,6 +39,7 @@
 - [WordPress](wordpress.md)
 - [devilbox](devilbox.md)
 - [Self Signed Certificates](self_signed_cert.md)for development
+- [Digital Marketing](digital_marketing.md)
 
 ## Tools and Other Software
 
@@ -47,3 +48,4 @@
 - [Image Editing](image_editing.md)
 - [Invoices](invoices.md)
 - [Payment Processing](payments.md)
+- [Editors](editors.md)
