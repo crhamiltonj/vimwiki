@@ -22,4 +22,6 @@ Themes change the look and feel of a wordpress site. Plugins change the function
 
 - Classic Editor
 
+[Themes](wordpress--themes.md)
+
 [Back to Index](index.md)
