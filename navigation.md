@@ -38,7 +38,8 @@
 - [Apache](apache.md)
 - [WordPress](wordpress.md)
 - [devilbox](devilbox.md)
-- [Self Signed Certificates](self_signed_cert.md)for development
+- [Self Signed Certificates](self_signed_cert.md)
+- [Digital Marketing](digital_marketing.md)
 
 [Tools and Other Software]()
 
