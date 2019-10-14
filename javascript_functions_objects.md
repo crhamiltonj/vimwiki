@@ -323,4 +323,38 @@ console.log(ages);
 console.log(fullJapan);
 ```
 
+### Returning, Mutating and Chaining Example
+
+```javascript
+let pets = [
+  {name: "Meowsalot", species: 'cat', age: 2},
+  {name: "barksalot", species: 'dog', age: 3},
+  {name: 'Purrsloud', species: 'cat', age: 8}
+]
+
+console.log(pets.push({name: 'Pupster', species: 'dog', age: 1}))
+let ourTest = pets.map(nameOnly)
+let dogs = pets.filter(dogsOnly)
+
+
+
+function nameOnly(pet) {
+  return pet.name
+}
+
+function dogsOnly(pet) {
+  return pet.species == 'dog'
+}
+
+function onlyBabies(pets) {
+  return pets.age < 3
+}
+
+let babyDogNames = pets.filter(dogsOnly).filter(onlyBabies).map(nameOnly)
+
+console.log(ourTest)
+console.log(dogs)
+console.log(babyDogNames)
+```
+
 [Back](javascript.md)

@@ -70,4 +70,5 @@ console.log(john['firstName']);
 console.log(john.firstName)
 ```
 
+
 [Back](javascript.md)
