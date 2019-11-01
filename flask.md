@@ -205,6 +205,12 @@ Creates a blueprint named `auth`.
 - `__name__` is passed in a an argument so other parts of the blueprint can know where it is defined.
 - `url_prefix` is prepended to all URL associated with the blueprint.
 
+## Tips and Tricks
+
+When creating a blueprint that replaces the root path, the static folder won't be found automatically.  You have to set a static_url path that will point to the correct folder.
+
+https://stackoverflow.com/questions/22152840/flask-blueprint-static-directory-does-not-work
+
 ## Databases and ORMs
 
 - [SQLAlchemy Bare](./sqlalchemy-bare.md)

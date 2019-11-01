@@ -137,7 +137,7 @@ Docker compose is created from two parts
 2. docker-compose used for local dev and test automation
 
 #### Sample docker-compose.yml
-
+<!-- 
 ```yaml
 version: "2"
 
@@ -151,7 +151,7 @@ services:
       - .:/site
     ports:
       - "80:4000"
-```
+``` -->
 
 ### Docker Compose CLI
 
