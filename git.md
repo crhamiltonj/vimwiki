@@ -10,7 +10,7 @@
 - Writing good commit messages:
   - Example
 
-```text
+```
   <type of change> <short description>
 
   (OPTIONAL)

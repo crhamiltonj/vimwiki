@@ -87,7 +87,7 @@ STATICFILES_DIRS = [
 ]
 ```
 
-4. run `python manage.py collectstatic'
+4. run `python manage.py collectstatic`
 
 This will create a static folder in the root of the project.
 
@@ -178,7 +178,7 @@ admin.site.register(Realtor)
 3. Log into the admin area `http://localhost/admin` and log in
 4. The model should be visible
 
-### Adding a Media Folder and Uploading
+## Adding a Media Folder and Uploading
 
 1. Add the following to settings.py
 
@@ -203,9 +203,9 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 ```
 
-### Modifying the Admin Templates
+## Modifying the Admin Templates
 
-#### Sample base_site.html
+### Sample base_site.html
 
 ```
 {% extends 'admin/base.html' %}
@@ -221,7 +221,7 @@ urlpatterns = [
 {% endblock %}
 ```
 
-#### Sample admin.css
+### Sample admin.css
 
 ```
 #header {
@@ -263,6 +263,153 @@ a.button {
   background: #10284e;
   color: #ffffff;
 }
+```
+
+## Modify Admin List Display for Model
+
+Create an `admin.ModelAdmin` derived class to customize list displays and register with the model class in admin.py for app.
+
+```python
+class ListingAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'is_published', 'price', 'list_date', 'realtor')
+    list_display_links = ('id', 'title')
+    list_filter = ('realtor', )
+    list_editable = ('is_published', )
+    search_fields = ('title', 'description', 'address', 'city', 'state', 'zipcode', 'price')
+    list_per_page = 25
+
+admin.site.register(Listing, ListingAdmin)
+```
+
+## Querying Tables from a Page Request
+
+The following view function show how to chain filters to a query to reduce elements in the final result.
+
+```python
+def search(request):
+
+    queryset_list = Listing.objects.order_by("-list_date")
+
+    # Only show published listings
+    queryset_list = queryset_list.filter(is_published=True)
+
+    # Keyword field filter
+    if "keywords" in request.GET:
+        keywords = request.GET["keywords"]
+        if keywords:
+            queryset_list = queryset_list.filter(description__icontains=keywords)
+
+    # City field filter
+    if "city" in request.GET:
+        city = request.GET["city"]
+        if city:
+            queryset_list = queryset_list.filter(city__iexact=city)
+
+    # state field filter
+    if "state" in request.GET:
+        state = request.GET["state"]
+        if state:
+            queryset_list = queryset_list.filter(state__iexact=state)
+
+    # bedrooms field filter
+    if "bedrooms" in request.GET:
+        bedrooms = request.GET["bedrooms"]
+        if bedrooms:
+            queryset_list = queryset_list.filter(bedrooms__lte=bedrooms)
+
+    # price field filter
+    if "price" in request.GET:
+        price = request.GET["price"]
+        if price:
+            queryset_list = queryset_list.filter(price__lte=price)
+
+    context = {
+        "bedroom_choices": bedroom_choices,
+        "price_choices": price_choices,
+        "state_choices": state_choices,
+        "listings": queryset_list,
+    }
+    return render(request, "listings/search.html", context)
+```
+
+## Populate form values with values from original request
+
+In the context pass the values received from request.GET
+
+```python
+    context = {
+        "bedroom_choices": bedroom_choices,
+        "price_choices": price_choices,
+        "state_choices": state_choices,
+        "listings": queryset_list,
+        'values': request.GET
+    }
+```
+
+The for the fields either pass in the value for that field (for input fields) or test that the current item is equal to the original request value and set it as selected (option lists, radio buttons, check boxes)
+
+```
+<div class="col-md-4 mb-3">
+    <label class="sr-only">City</label>
+    <input type="text" name="city" class="form-control" placeholder="City"  value="{{ values.city }}">
+</div>
+
+<div class="col-md-4 mb-3">
+    <label class="sr-only">State</label>
+    <select name="state" class="form-control">
+    <option selected="true" disabled="disabled">State (All)</option>
+    {% for key, value in state_choices.items %}
+    <option value="{{key}}" {% if values.state == key %}selected="true"{% endif %}>{{value}}</option>
+    {% endfor %}
+    </select>
+</div>
+```
+
+## Dismissable Flash Errors Message Partial
+
+Add the following to the bottom of the project `settings.py`
+
+```python
+# Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+```
+
+The create a partial template that contains the following
+
+```
+{% if messages %}
+{% for message in messages %}
+    <div id="message" class="container">
+      <div class="alert alert-{{message.tags}} alert-dismissable text-center" role="alert">
+        <button type='button' class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+        <strong>
+          {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+          Error
+          {% else %}
+            {{message.tags|title}}
+          {% endif %}
+        </strong>
+        {{message}}
+      </div>
+    </div>
+{% endfor %}
+{% endif %}
+```
+
+## Sample Dockerfile
+
+```
+FROM python:3.6
+
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /code
+WORKDIR /code
+COPY requirements.txt /code/
+RUN pip install -r requirements
+COPY . /code/
 ```
 
 [Back to Index](index.md)
