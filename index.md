@@ -45,6 +45,7 @@
 - [Self Signed Certificates](self_signed_cert.md)
 - [Digital Marketing](digital_marketing.md)
 - [Vagrant](vagrant.md)
+- [Tips and Tricks](web_tech_and_tools__tips_and_tricks.md)
 
 [Tools and Other Software]()
 
