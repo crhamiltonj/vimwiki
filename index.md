@@ -41,8 +41,10 @@
 - [Apache](apache.md)
 - [WordPress](wordpress.md)
 - [devilbox](devilbox.md)
+- [ELK Stack](elk_stack.md)
 - [Self Signed Certificates](self_signed_cert.md)
 - [Digital Marketing](digital_marketing.md)
+- [Vagrant](vagrant.md)
 
 [Tools and Other Software]()
 
@@ -52,4 +54,8 @@
 - [Invoices](invoices.md)
 - [Payment Processing](payments.md)
 
+[Thinkpad]()
+
+- [Trackpad and Trackpoint](thinkpad__trackpoint_sensitivity.md)
+h
 [gimmick:themechooser](Choose theme)
