@@ -58,5 +58,5 @@
 [Thinkpad]()
 
 - [Trackpad and Trackpoint](thinkpad__trackpoint_sensitivity.md)
-h
+
 [gimmick:themechooser](Choose theme)
