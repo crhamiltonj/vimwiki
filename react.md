@@ -91,4 +91,42 @@ Javascript variables can be referenced by surrounding with single curly brackets
 
 `<button style="{{ backgroundColor: 'blue', color: 'white' }}">{ buttonText }</button>`
 
+#### What variables JSX can't show
+
+Objects can not be directly displayed as text in JSX such as `buttonText = {text: 'Click Me' }`. However members can be accessed and printed.  Object can be used in JSX as long as they are not printed directly in the rendered HTML.
+
+## Props
+
+### Component Nesting
+
+Showing a component inside of another component
+
+### Component Reusability
+
+Make a component that is reusable
+
+1. Identify the JSX that appears to be duplicated
+2. Think of a name for what the block of JSX does
+3. Create a new file to house the new component
+4. Create a new component in the new file and paste the JSX into it
+5. Make the component configurable using props
+
+### Component Configuration
+
+Being able to configure a component when it is created
+
+### Passing Props to a component (attributes)
+
+1. In the call to the component pass an attriibute:
+    `<CommentDetail author="Sam" />`
+2. In the component, refer to the attribute via the props object:
+    `<a href="/" className="author">{props.author}</a>`
+
+### Passing Props to a component (Child Rendering)
+
+1. In the parent Component call nest the content between the opening and closing tags.
+    `<ApprovalCard>This is a message</ApprovalCard>`
+2. In the component the nested info is passed in a props.children, which can be used a an object in the JSX
+    `<div>{props.children}</div>`
+
 [Back to Index](index.md)
