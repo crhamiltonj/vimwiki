@@ -28,7 +28,7 @@
 
 - [Flask](flask.md)
 - [Django](django.md)
-- [React](react.md)
+[](-) [React](react.md)
 - [Angular](angular.md)
 - [Vue](vue.md)
 - [Express](node_express.md)
