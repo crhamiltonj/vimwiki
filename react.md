@@ -129,4 +129,85 @@ Being able to configure a component when it is created
 2. In the component the nested info is passed in a props.children, which can be used a an object in the JSX
     `<div>{props.children}</div>`
 
+### Passing Props back up to Parent
+
+***NOTE*** - Can only be done with a class based App component
+
+1. Create a value or callback function in the App class
+2. Pass the the object to the child as a prop on the component
+3. Attach the value or callback to an event of an element in the child
+4. When the callback fires the values are now available to the parent object (App)
+
+### Creating API requests
+
+1. Install the axios library
+2. In the callback for an event call axios.get with the URL and any headers or parameters
+3. If the call return a response (single or multi) capture the response 
+
+#### Using Async/Await
+
+```javascript
+async onSearchSubmit(term) {
+    console.log(term)
+    const response = await axios.get('https://api.unsplash.com/search/photos', {
+      headers: {
+        Authorization:
+          'Client-ID 485978d96bcac2a2612aa974accf2726f6c7b2ac413f9fe4e8f6cefe5742954f'
+      },
+      params: {
+        query: term
+      }
+    })
+
+    console.log(response)
+  }
+```
+
+#### Using Promise
+
+```javascript
+onSearchSubmit(term) {
+    console.log(term)
+    const response = axios.get('https://api.unsplash.com/search/photos', {
+      headers: {
+        Authorization:
+          'Client-ID 485978d96bcac2a2612aa974accf2726f6c7b2ac413f9fe4e8f6cefe5742954f'
+      },
+      params: {
+        query: term
+      }
+    }).then((response) => { console.log(response)})
+  }
+```
+
+#### Customize axios configuration for App
+
+In a separate file call axios create with reasonable defaults
+
+```javascript
+import axios from 'axios'
+
+export default axios.create({
+  baseURL: 'https://api.unsplash.com',
+  headers: {
+    Authorization:
+      'Client-ID 485978d96bcac2a2612aa974accf2726f6c7b2ac413f9fe4e8f6cefe5742954f'
+  }
+})
+
+```
+
+Then you can import this into your app and call the modules personalized get method
+
+```javascript
+onSearchSubmit = async (term) => {
+    console.log(term)
+    const response = await unsplash.get('/search/photos', {
+      params: {
+        query: term
+      }
+    })
+
+```
+
 [Back to Index](index.md)
