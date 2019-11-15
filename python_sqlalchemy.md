@@ -223,6 +223,9 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 ```
+## Tips and Tricks
+
+[SQLAlchemy ORM Tutorial for Python Developers](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/)
 
 [Back to Python](python.md)
 [Back to Index](index.md)
