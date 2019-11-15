@@ -208,6 +208,62 @@ onSearchSubmit = async (term) => {
       }
     })
 
+### Specifying Default Properties
+
+You can specify default properties as follows:
+`ComponentName.defaultProps = { property: value }`
+
+If you don't specify that property the default value will automatically be used.
+
+## Class Based Components
+
+Class based components contain the following:
+
+1. They are javascript classes that extend from React.Component
+2. The **must** have a render function or you will get an error
+    `TypeError: instance.render is not a function`
+3. They can contain the following functions:
+    * `constructor(props)` - runs once on creation and is where a state object can be created
+    * `componentDidMount()` - runs once when the component is created
+    * `componentDidUpdate()` - runs everytime the state is updated
+    * `componentWillUnmount()` - runs when component is about to be destroyed
+
+```javascript
+class App extends React.Component {
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      lat: null,
+      errorMessage: ''
+    }
+  }
+  
+  componentDidMount() {
+    console.log('componentDidMount just ran...')
+    window.navigator.geolocation.getCurrentPosition(
+      position => {
+        this.setState({lat: position.coords.latitude})
+      },
+      err => this.setState({errorMessage: err.message})
+    )
+  }
+
+  componentDidUpdate() {
+    console.log('componentDidUpdate just ran...')
+  }
+
+  render() {
+    if (this.state.errorMessage && !this.state.lat) {
+      return <div>Error: {this.state.errorMessage}</div>
+    }
+    if(!this.state.errorMessage && this.state.lat) {
+      return <div>Latitude: {this.state.lat}</div>
+    }
+
+    return <div>Loading...</div>
+  }
+}
 ```
 
 [Back to Index](index.md)
