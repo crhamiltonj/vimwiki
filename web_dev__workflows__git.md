@@ -32,6 +32,8 @@
     - `git checkout -- .` -- will revert files to last commited version
 4. Clone an existing repo
     - `git clone git@github.com:<username>/<reponame>.git` clones an existing repo to the current directory in its own subdirectory
-
-## GitHub
-
+5. Change the origin
+    - `git remote set-url origin <url_for_remote_repository>`
+6. Check the remote repo localtion
+    - `git remote -v`
+    
