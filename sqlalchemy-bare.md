@@ -8,7 +8,7 @@ engine = create_engine('sqlite:///:memory:', echo=True)
 
 ## Declaring a Mapping
 
-### Establishing the Base class 
+### Establishing the Base class
 
 All ORM objects are derived from this class
 
@@ -87,8 +87,8 @@ for instance in session.query(User).order_by(User.id):
 | **IN** | session.query.filter(_Object.fieldname_.in\_([list,of,values])) |
 | **NOT IN** | session.query.filter(*~Object.fieldname*.in_([list,of,values])) |
 | **IS NULL** | session.query.filter(*Object.fieldname* == None) <br> session.query.filter(_Object.fieldname_.is\_(None)) |
-| ** IS NOT NULL** | session.query.filter(_Object.fieldname_ != None)<br>session.query.filter(_Object.fieldname_.isnot(None)) |
-| ** AND ** | session.query.filter(_and(*first filter*, *second filter*))<br>session.query.filter(*first term*, *second term*)<br>session.query.filter(*first term*).filter(*second term*)|
+| **IS NOT NULL** | session.query.filter(_Object.fieldname_ != None)<br>session.query.filter(_Object.fieldname_.isnot(None)) |
+| **AND** | session.query.filter(_and(*first filter*, *second filter*))<br>session.query.filter(*first term*, *second term*)<br>session.query.filter(*first term*).filter(*second term*)|
 | **OR** | session.query.filter(or\_(_Object.fieldname1_, _Object.fieldname2_))|
 | **MATCH** | session.query.filter(_Object.fieldname_.match(*value*))|
 
@@ -121,4 +121,3 @@ session.query(User).filter(User.name.like('%ed')).count()
 ```
 
 ## Relationships
-

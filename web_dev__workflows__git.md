@@ -36,4 +36,3 @@
     - `git remote set-url origin <url_for_remote_repository>`
 6. Check the remote repo localtion
     - `git remote -v`
-    

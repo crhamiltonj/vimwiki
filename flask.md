@@ -213,9 +213,9 @@ https://stackoverflow.com/questions/22152840/flask-blueprint-static-directory-do
 
 ## Databases and ORMs
 
-- [SQLAlchemy Bare](./sqlalchemy-bare.md)
-- [Flask-SQLAlchemy](./flask-sqlalchemy.md)
-- [Flask-Migrate](./flask-migrate.md)
+- [SQLAlchemy Bare](sqlalchemy-bare.md)
+- [Flask-SQLAlchemy](flask-sqlalchemy.md)
+- [Flask-Migrate](flask-migrate.md)
 
 ## Flask REST APIs
 
