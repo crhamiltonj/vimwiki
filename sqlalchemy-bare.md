@@ -3,19 +3,21 @@
 ## Connecting
 
 ```python
+from sqlalchemy import create_engine
+
 engine = create_engine('sqlite:///:memory:', echo=True)
 ```
 
 ## Declaring a Mapping
 
-### Establishing the Base class 
+### Establishing the Base class
 
 All ORM objects are derived from this class
 
 ```python
-from sqlalchemy.ext.declaritive import declaritive_base
+from sqlalchemy.ext.declarative import declarative_base
 
-Base = declaritive_base()
+Base = declarative_base()
 ```
 
 ### Defining the Class
@@ -49,6 +51,51 @@ If you don't have an engine to connect to:
 Session = sessionmaker()
 
 Session.configure(bind=engine)
+```
+
+### Full Example of db module
+
+```python
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+
+
+engine = create_engine("sqlite:///:memory:", echo=False)
+db_session = scoped_session(
+    sessionmaker(autocommit=False, autoflush=False, bind=engine)
+)
+
+
+Base = declarative_base()
+Base.query = db.session.query_property()
+
+
+def init_db():
+    from app.models import User
+
+    Base.metadata.create_all(bind=engine)
+```
+
+### Full Example of a model module
+
+```python
+from sqlalchemy import Column, Integer, String, Boolean, DateTime
+from db import Base
+
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String, unique=True)
+    email = Column(String, unique=True)
+    hashed_password = Column(String, nullable=True)
+
+    def __init__(self, name=None, email=None):
+        self.name = name
+        self.email = email
+
+    def __repr__(self):
+        return f'<User {self.name}>'
 ```
 
 ## Basic CRUD Functions
@@ -87,8 +134,8 @@ for instance in session.query(User).order_by(User.id):
 | **IN** | session.query.filter(_Object.fieldname_.in\_([list,of,values])) |
 | **NOT IN** | session.query.filter(*~Object.fieldname*.in_([list,of,values])) |
 | **IS NULL** | session.query.filter(*Object.fieldname* == None) <br> session.query.filter(_Object.fieldname_.is\_(None)) |
-| ** IS NOT NULL** | session.query.filter(_Object.fieldname_ != None)<br>session.query.filter(_Object.fieldname_.isnot(None)) |
-| ** AND ** | session.query.filter(_and(*first filter*, *second filter*))<br>session.query.filter(*first term*, *second term*)<br>session.query.filter(*first term*).filter(*second term*)|
+| **IS NOT NULL** | session.query.filter(_Object.fieldname_ != None)<br>session.query.filter(_Object.fieldname_.isnot(None)) |
+| **AND** | session.query.filter(_and(*first filter*, *second filter*))<br>session.query.filter(*first term*, *second term*)<br>session.query.filter(*first term*).filter(*second term*)|
 | **OR** | session.query.filter(or\_(_Object.fieldname1_, _Object.fieldname2_))|
 | **MATCH** | session.query.filter(_Object.fieldname_.match(*value*))|
 
@@ -121,4 +168,3 @@ session.query(User).filter(User.name.like('%ed')).count()
 ```
 
 ## Relationships
-

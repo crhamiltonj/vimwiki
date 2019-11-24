@@ -207,7 +207,7 @@ urlpatterns = [
 
 ### Sample base_site.html
 
-```
+```html+jinja
 {% extends 'admin/base.html' %}
 {% load static %}
 
