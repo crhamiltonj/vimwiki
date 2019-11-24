@@ -4,63 +4,58 @@
 
 ## Standard main.js for Vue
 
-```javascript
+~~~javascript
 import Vue from 'vue'
 import App from './App'
 
 new Vue({
   render: h => h(App)
 }).$mount('#app')
-```
+~~~
 
 ## Standard App.vue component
 
-```xml
-<template>
-  <div>
-    <SearchBar></SearchBar>
-  </div>
-</template>
+    
+    <template>
+      <div>
+        <SearchBar></SearchBar>
+      </div>
+    </template>
 
-<script>
-import SearchBar from './components/SearchBar';
+    <script>
+    import SearchBar from './components/SearchBar';
 
-export default {
-  name: "App",
-  components:{
-    SearchBar
-  }
-}
-</script>
+    export default {
+      name: "App",
+      components:{
+        SearchBar
+      }
+    }
+    </script>
 
-<style>
-</style>
-```
+    <style>
+    </style>
 
 ## Standard SubComponent
 
-```xml
-<template>
-  <div>
-    <input @input="onInput" />
-  </div>
-</template>
+    <template>
+      <div>
+        <input @input="onInput" />
+      </div>
+    </template>
 
-<script>
-export default {
-  methods: {
-    onInput: function(event) {
-      /* eslint-disable  no-console */
-      console.log(event.target.value)
-      /* eslint-enable  no-console */
+    <script>
+    export default {
+      methods: {
+        onInput: function(event) {
+          console.log(event.target.value)
+        }
+      }
     }
-  }
-}
-</script>
+    </script>
 
-<style>
+    <style>
 
-</style>
-```
+    </style>
 
 [Back to Index](index.md)
