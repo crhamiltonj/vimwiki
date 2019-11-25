@@ -207,19 +207,7 @@ urlpatterns = [
 
 ### Sample base_site.html
 
-```text
-{% extends 'admin/base.html' %}
-{% load static %}
 
-{% block branding %}
-<h1 id="head">
-  <img src="{% static 'img/logo.png' %}" alt="BT Real Estate" class="brand_img" height="50" width="80"> Admin Area
-</h1>
-{% endblock %}
-{% block extrastyle %}
-  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
-{% endblock %}
-```
 
 ### Sample admin.css
 
@@ -348,22 +336,6 @@ In the context pass the values received from request.GET
 
 The for the fields either pass in the value for that field (for input fields) or test that the current item is equal to the original request value and set it as selected (option lists, radio buttons, check boxes)
 
-    ```
-    <div class="col-md-4 mb-3">
-        <label class="sr-only">City</label>
-        <input type="text" name="city" class="form-control" placeholder="City"  value="{{ values.city }}">
-    </div>
-
-    <div class="col-md-4 mb-3">
-        <label class="sr-only">State</label>
-        <select name="state" class="form-control">
-        <option selected="true" disabled="disabled">State (All)</option>
-        {% for key, value in state_choices.items %}
-        <option value="{{key}}" {% if values.state == key %}selected="true"{% endif %}>{{value}}</option>
-        {% endfor %}
-        </select>
-    </div>
-    ```
 
 ## Dismissable Flash Errors Message Partial
 
@@ -378,26 +350,6 @@ MESSAGE_TAGS = {
 ```
 
 The create a partial template that contains the following
-
-```text
-{% if messages %}
-{% for message in messages %}
-    <div id="message" class="container">
-      <div class="alert alert-{{message.tags}} alert-dismissable text-center" role="alert">
-        <button type='button' class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
-        <strong>
-          {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
-          Error
-          {% else %}
-            {{message.tags|title}}
-          {% endif %}
-        </strong>
-        {{message}}
-      </div>
-    </div>
-{% endfor %}
-{% endif %}
-```
 
 ## Sample Dockerfile
 
