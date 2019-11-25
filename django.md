@@ -87,7 +87,7 @@ STATICFILES_DIRS = [
 ]
 ```
 
-4. run `python manage.py collectstatic`
+4. Run `python manage.py collectstatic`
 
 This will create a static folder in the root of the project.
 
@@ -207,18 +207,19 @@ urlpatterns = [
 
 ### Sample base_site.html
 
-    {% extends 'admin/base.html' %}
-    {% load static %}
+```text
+{% extends 'admin/base.html' %}
+{% load static %}
 
-    {% block branding %}
-    <h1 id="head">
-      <img src="{% static 'img/logo.png' %}" alt="BT Real Estate" class="brand_img" height="50" width="80"> Admin Area
-    </h1>
-    {% endblock %}
-    {% block extrastyle %}
-      <link rel="stylesheet" href="{% static 'css/admin.css' %}">
-    {% endblock %}
-
+{% block branding %}
+<h1 id="head">
+  <img src="{% static 'img/logo.png' %}" alt="BT Real Estate" class="brand_img" height="50" width="80"> Admin Area
+</h1>
+{% endblock %}
+{% block extrastyle %}
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
+```
 
 ### Sample admin.css
 
@@ -378,29 +379,29 @@ MESSAGE_TAGS = {
 
 The create a partial template that contains the following
 
-    ```
-    {% if messages %}
-    {% for message in messages %}
-        <div id="message" class="container">
-          <div class="alert alert-{{message.tags}} alert-dismissable text-center" role="alert">
-            <button type='button' class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
-            <strong>
-              {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
-              Error
-              {% else %}
-                {{message.tags|title}}
-              {% endif %}
-            </strong>
-            {{message}}
-          </div>
-        </div>
-    {% endfor %}
-    {% endif %}
-    ```
+```text
+{% if messages %}
+{% for message in messages %}
+    <div id="message" class="container">
+      <div class="alert alert-{{message.tags}} alert-dismissable text-center" role="alert">
+        <button type='button' class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+        <strong>
+          {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+          Error
+          {% else %}
+            {{message.tags|title}}
+          {% endif %}
+        </strong>
+        {{message}}
+      </div>
+    </div>
+{% endfor %}
+{% endif %}
+```
 
 ## Sample Dockerfile
 
-```
+```text
 FROM python:3.6
 
 ENV PYTHONUNBUFFERED 1
