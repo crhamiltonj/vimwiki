@@ -207,7 +207,6 @@ urlpatterns = [
 
 ### Sample base_site.html
 
-    ```html+jinja
     {% extends 'admin/base.html' %}
     {% load static %}
 
@@ -219,7 +218,7 @@ urlpatterns = [
     {% block extrastyle %}
       <link rel="stylesheet" href="{% static 'css/admin.css' %}">
     {% endblock %}
-    ```
+
 
 ### Sample admin.css
 
