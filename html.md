@@ -12,12 +12,4 @@
 [Entities and Symbols](html__entities_symbols.md)
 [Semantic HTML](html__semantic_html.md)
 
-
-
-
-
-
-
-
-
 [Back to Index](index.md)
