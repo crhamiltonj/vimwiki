@@ -186,4 +186,4 @@ Control Plane -- How orders are sent around the swarm between managers and worke
 - Optional IPSec encryption
 - Each service can be connected to multiple networks
 
-[Back to Index](index.md)
+[Docker Tips and Tricks](Docker Tips and Tricks)

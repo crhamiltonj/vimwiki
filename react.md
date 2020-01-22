@@ -207,6 +207,7 @@ onSearchSubmit = async (term) => {
         query: term
       }
     })
+```
 
 ### Specifying Default Properties
 
@@ -266,4 +267,3 @@ class App extends React.Component {
 }
 ```
 
-[Back to Index](index.md)
